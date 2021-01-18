@@ -1,24 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Carbon Design System Sandbox</title>
-    <meta charset="UTF-8" />
-    <!-- Using carbons latest URL
-    <link
-      rel="stylesheet"
-      href="//unpkg.com/carbon-components@latest/css/carbon-components.min.css"
-    />
-    -->
-    <link
-      rel="stylesheet" type="text/css"
-      href="./static/carbon-components.min.css"
-    />
-    <link rel="stylesheet" href="./src/styles.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="https://www.ibm.com/favicon.ico">
+    <title>IBM App Connect Toolkit - Welcome</title>
+    <link rel="stylesheet" type="text/css" href="./static/carbon-components.min.css">
+    <link rel="stylesheet" href="./src/styles.css">
   </head>
 
   <body>
     <div id="app">
       <header aria-label="IBM Toolkit" class="bx--header">
-        <a class="bx--header__name" href="#">
+        <a class="bx--header__name">
           <span class="bx--header__name--prefix">IBM</span>
           &nbsp;App Connect&nbsp;<span class="header-highlight">Toolkit</span>
         </a>
@@ -26,11 +21,10 @@
           <ul
             aria-label="IBM Toolkit"
             class="bx--header__menu-bar"
-            #f4f4f4
             role="menubar"
           >
             <li>
-              <a class="bx--header__menu-item" tabindex="0">
+              <a href="http://org.eclipse.ui.intro/close" class="bx--header__menu-item" tabindex="0">
                 <span class="bx--text-truncate--end">Close welcome</span>
               </a>
             </li>
@@ -49,7 +43,6 @@
               <a
                 aria-current="page"
                 class="bx--side-nav__link IdeNavigation--altHover-link active"
-                href="#/cloud-integration-design/toolkit-prototype-v3/home"
                 ><div class="bx--side-nav__icon bx--side-nav__icon--small">
                   <svg
                     focusable="false"
@@ -73,8 +66,9 @@
             <li class="bx--side-nav__item bx--side-nav__item--large">
               <a
                 class="bx--side-nav__link IdeNavigation--altHover-link"
-                href="#/cloud-integration-design/toolkit-prototype-v3/tutorials"
-                ><div class="bx--side-nav__icon bx--side-nav__icon--small">
+                href="http://org.eclipse.ui.intro/runAction?pluginId=com.ibm.etools.mft.tutorials&amp;class=com.ibm.etools.mft.tutorials.views.OpenTutorialsGallery&amp;productID=com.ibm.etools.msgbroker.tooling.ide"
+                >
+                <div class="bx--side-nav__icon bx--side-nav__icon--small">
                   <svg
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
@@ -100,7 +94,7 @@
             <li class="bx--side-nav__item bx--side-nav__item--large">
               <a
                 class="bx--side-nav__link IdeNavigation--altHover-link"
-                href="#/cloud-integration-design/toolkit-prototype-v3/whats-new"
+                href="http://org.eclipse.ui.intro/showHelpTopic?id=/com.ibm.etools.mft.doc/bb23850_.html"
                 ><div class="bx--side-nav__icon bx--side-nav__icon--small">
                   <svg
                     focusable="false"
@@ -127,7 +121,7 @@
             <li class="bx--side-nav__item bx--side-nav__item--large">
               <a
                 class="bx--side-nav__link IdeNavigation--altHover-link"
-                href="#/cloud-integration-design/toolkit-prototype-v3/language-pack"
+                href="http://org.eclipse.ui.intro/showHelpTopic?id=/com.ibm.iib.langpacks.doc/bh25997_.htm"
                 ><div class="bx--side-nav__icon bx--side-nav__icon--small">
                   <svg
                     focusable="false"
@@ -190,43 +184,6 @@
                   </div>
                 </div>
 
-                <!-- An example of how to use Carbon Components with Dropdown in index.js
-                <div class="bx--form-item">
-                  <div class="bx--dropdown__wrapper ">
-                    <span id="example-ap3t91wclrj-label" class="bx--label">Dropdown label</span>
-                    <div class="bx--form__helper-text">Optional helper text.</div>
-                    <div id="my-dropdown" data-dropdown data-value class="bx--dropdown">
-                      <button class="bx--dropdown-text" aria-haspopup="true" aria-expanded="false" aria-controls="example-ap3t91wclrj-menu" aria-labelledby="example-ap3t91wclrj-label example-ap3t91wclrj-value" type="button">
-                        <span class="bx--dropdown-text__inner" id="example-ap3t91wclrj-value"> Dropdown option </span>
-                        <span class="bx--dropdown__arrow-container">
-                          <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path></svg>
-                        </span>
-                      </button>
-                      <ul class="bx--dropdown-list" id="example-ap3t91wclrj-menu" role="menu" tabindex="0" id="example-ap3t91wclrj-menu" aria-hidden="true" wh-menu-anchor="left" aria-labelledby="example-ap3t91wclrj-label">
-                        <li data-option data-value="all" class="bx--dropdown-item" title="Option 1">
-                          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="true" id="example-ap3t91wclrj-item0">Option 1</a>
-                        </li>
-                        <li data-option data-value="cloudFoundry" class="bx--dropdown-item" title="Option 2">
-                          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item1">Option 2</a>
-                        </li>
-                        <li data-option data-value="staging" class="bx--dropdown-item" title="Option 3">
-                          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item2">Option 3</a>
-                        </li>
-                        <li data-option data-value="dea" class="bx--dropdown-item" title="Option 4">
-                          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item3">Option 4</a>
-                        </li>
-                        <li data-option data-value="router" class="bx--dropdown-item" title="Option 5">
-                          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item4">Option 5</a>
-                        </li>
-                        <li data-option data-value="loremipsum" class="bx--dropdown-item" title="An example option that is really long to show what should be done to handle long text">
-                          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item5">An example option that is really long to show what should be done to handle long text</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                -->
-
                 <div
                   data-ui-id="IdeHome-Sets"
                   class="bx--row bx--grid bx--grid--condensed ide--home-table"
@@ -236,17 +193,19 @@
                     class="bx--row ide--home-full-width"
                   >
                     <div
-                      class="ide--card-container ide--card-container__standard ide--card-text bx--col-md-2 bx--col-lg-4 bx--col-max-4"
+                      class="ide--card-container ide--card-container__standard ide--card-text bx--col-sm-4 bx--col-md-2 bx--col-lg-4 bx--col-max-4"
                       data-ui-id="ide--card-tutorials"
                     >
                       <div class="ide--card">
                         <a
-                          href="javascript:void(0)"
+                          href="http://org.eclipse.ui.intro/runAction?pluginId=com.ibm.etools.mft.tutorials&amp;class=com.ibm.etools.mft.tutorials.views.OpenTutorialsGallery&amp;productID=com.ibm.etools.msgbroker.tooling.ide"
                           class="bx--tile bx--tile--clickable ide--card--card-overides undefined"
                           tabindex="0"
                           aria-label="Tutorials"
                           data-ui-id="ide--card-tutorials-card"
-                          ><div
+                          data-external="true"
+                          >
+                          <div
                             data-ui-id="ide--card-tutorials-Text-Tile"
                             class="ide--card--tile"
                           >
@@ -309,12 +268,12 @@
                       </div>
                     </div>
                     <div
-                      class="ide--card-container ide--card-container__standard ide--card-text bx--col-md-2 bx--col-lg-4 bx--col-max-4"
+                      class="ide--card-container ide--card-container__standard ide--card-text bx--col-sm-4 bx--col-md-2 bx--col-lg-4 bx--col-max-4"
                       data-ui-id="ide--card-whats-new"
                     >
                       <div class="ide--card">
                         <a
-                          href="javascript:void(0)"
+                          href="http://org.eclipse.ui.intro/showHelpTopic?id=/com.ibm.etools.mft.doc/bb23850_.html"
                           class="bx--tile bx--tile--clickable ide--card--card-overides undefined"
                           tabindex="0"
                           aria-label="What's new?"
@@ -382,12 +341,12 @@
                       </div>
                     </div>
                     <div
-                      class="ide--card-container ide--card-container__standard ide--card-text bx--col-md-2 bx--col-lg-4 bx--col-max-4"
+                      class="ide--card-container ide--card-container__standard ide--card-text bx--col-sm-4 bx--col-md-2 bx--col-lg-4 bx--col-max-4"
                       data-ui-id="ide--card-language-pack"
                     >
                       <div class="ide--card">
                         <a
-                          href="javascript:void(0)"
+                          href="http://org.eclipse.ui.intro/showHelpTopic?id=/com.ibm.iib.langpacks.doc/bh25997_.htm"
                           class="bx--tile bx--tile--clickable ide--card--card-overides undefined"
                           tabindex="0"
                           aria-label="Language pack"
@@ -447,8 +406,9 @@
                                 data-ui-id="ide--card-language-pack-text"
                                 class="ide--card--tile-text"
                               ></p>
-                            </div></div
-                        ></a>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </section>
@@ -459,7 +419,5 @@
         </main>
       </div>
     </div>
-
-    <script src="./src/index.js"></script>
   </body>
 </html>
